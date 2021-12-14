@@ -1,0 +1,120 @@
+
+/***********/
+/* Header */
+/***********/
+
+header {
+    background-color: var(--color-amarillo);
+    font-size: var(--paragraph);
+    padding-bottom: 10px;
+}
+
+header img {
+    margin-left: -8%;
+}
+
+header .burger-menu  {
+    background-color: var(--color-celeste);
+    border-radius: 5px;
+    color: white;
+    margin: 10px auto 0 auto;
+    text-align: center;
+    padding: 9px;
+    width: 15px;
+}
+
+header .logo {
+    width: 130px;
+    margin-left:25px;
+    padding-top: 25px;
+    margin-bottom: 10px;
+}
+
+header p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+/* Search Bar */
+
+.container {
+    display: flex;
+}
+
+.search-bar {
+    align-items: center;
+    background-color: var(--color-Blanco);
+    padding: 6px;
+    margin: 0 5px 0 20px;
+    width: 50%;
+}
+
+.search-bar input {
+    border:none;
+    font-size: 10px;
+    display: flex;
+    outline: none;
+    width: 100%;
+}
+.search-bar button {
+    border:none
+}
+
+/* Nav */
+
+nav {
+    display: none;
+}
+
+
+
+/* Media Queries */
+
+/* smartphones larger */
+@media (min-width: 361px){
+
+    .search-bar {
+        width: 40%;
+    }
+    
+    .search-bar input {
+        border:none;
+        font-size: 12px;
+        outline: none;
+        width: 100%;
+    }
+    
+    header p {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    
+}
+
+
+/* Media queries Tablet */
+@media (min-width: 768px){
+    .search-bar {
+        width: 20%;
+    }
+
+    header p {
+        font-size: 14px;
+    }
+
+    nav {
+        display: block;
+    }
+
+    .container-list ul li {
+        font-size: 15px;
+        margin: 0 15px;
+    }
+
+    .burger-menu {
+        display: none;
+    } 
+}
+
